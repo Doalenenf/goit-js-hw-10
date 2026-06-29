@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Promise Generator</title>
+    <script type="module" crossorigin src="/goit-js-hw-10/2-snackbar.js"></script>
+    <link rel="modulepreload" crossorigin href="/goit-js-hw-10/assets/modulepreload-polyfill-B5Qt9EMX.js">
+    <link rel="modulepreload" crossorigin href="/goit-js-hw-10/assets/vendor-BbbuE1sJ.js">
+    <link rel="stylesheet" crossorigin href="/goit-js-hw-10/assets/vendor-CZjNVMTf.css">
+    <link rel="stylesheet" crossorigin href="/goit-js-hw-10/assets/styles-Da0Swre4.css">
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <a class="back-link" href="./index.html">Go back to menu</a>
+      </div>
+    </header>
+
+    <main>
+      <div class="container snackbar-page-container">
+        <div class="snackbar-wrapper">
+          <form class="form">
+            <label class="form-label">
+              Delay (ms)
+              <input type="number" name="delay" class="form-input" required />
+            </label>
+
+            <fieldset class="form-fieldset">
+              <legend class="form-legend">State</legend>
+              <div class="radio-group">
+                <label class="radio-label">
+                  <input type="radio" name="state" value="fulfilled" required />
+                  Fulfilled
+                </label>
+                <label class="radio-label">
+                  <input type="radio" name="state" value="rejected" required />
+                  Rejected
+                </label>
+              </div>
+            </fieldset>
+
+            <button type="submit" class="form-submit-btn">Create notification</button>
+          </form>
+        </div>
+      </div>
+    </main>
+
+  </body>
+</html>
