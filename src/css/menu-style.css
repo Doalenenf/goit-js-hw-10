@@ -1,0 +1,58 @@
+.main-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: calc(100vh - 48px);
+}
+
+.task-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+  max-width: 360px;
+  background-color: #ffffff;
+  padding: 24px;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  margin: 0 auto;
+}
+
+.task-link {
+  display: block;
+  text-align: center;
+  background-color: #f1f5f9;
+  padding: 12px;
+  border-radius: 6px;
+  font-weight: 600;
+  color: #334155;
+  text-decoration: none;
+  transition: background-color 200ms ease, color 200ms ease;
+}
+
+.task-link:hover {
+  background-color: #e2e8f0;
+  color: #0f172a;
+}
+
+.back-link {
+  text-decoration: none;
+  color: #4f46e5;
+  font-weight: 500;
+  font-size: 16px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 32px;
+  transition: color 200ms ease;
+}
+
+.back-link:hover {
+  color: #3730a3;
+}
+
+.back-link::before {
+  display: none !important;
+}

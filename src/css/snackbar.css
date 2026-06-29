@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+/* Apply font-family globally to container and its children */
+.snackbar-page-container,
+.snackbar-page-container * {
+  font-family: 'Montserrat', sans-serif !important;
+}
+
+.snackbar-page-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 40px 24px;
+}
+
+.snackbar-wrapper {
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.form {
+  background-color: #FFFFFF;
+  border-radius: 8px;
+  padding: 24px;
+  width: 100%;
+  max-width: 360px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.form-label {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 16px;
+  color: #212121;
+  font-weight: 500;
+}
+
+.form-input {
+  padding: 8px 16px;
+  font-size: 16px;
+  color: #212121;
+  background-color: #FFFFFF;
+  border: 1px solid #808080;
+  border-radius: 4px;
+  outline: none;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  height: 40px;
+}
+
+.form-input:hover {
+  border-color: #212121;
+}
+
+.form-input:focus {
+  border-color: #4E75FF;
+}
+
+.form-fieldset {
+  border: 1px solid #808080;
+  border-radius: 4px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.form-legend {
+  font-size: 16px;
+  font-weight: 500;
+  color: #212121;
+  padding: 0 8px;
+}
+
+.radio-group {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.radio-label {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  font-size: 16px;
+  color: #212121;
+  cursor: pointer;
+}
+
+.radio-label input[type="radio"] {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  accent-color: #4E75FF;
+}
+
+.form-submit-btn {
+  padding: 8px 16px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #FFFFFF;
+  background-color: #4E75FF;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  height: 40px;
+  width: 100%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-submit-btn:hover {
+  background-color: #6C8CFF;
+}
+
+.form-submit-btn:focus {
+  background-color: #4E75FF;
+  outline: none;
+}
